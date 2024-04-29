@@ -2,6 +2,7 @@ const bodyElement = document.querySelector("body");
 bodyElement.addEventListener("mousemove",(event) =>{
     const xPos = event.offsetX;
     const yPos = event.offsetY;
+    
     const spanElement = document.createElement("span");
     spanElement.style.left = xPos + "px";
     spanElement.style.top = yPos + "px";
@@ -13,3 +14,10 @@ bodyElement.addEventListener("mousemove",(event) =>{
         spanElement.remove();
     },3000);
 });
+
+document.querySelector('.up-button').addEventListener("click",() =>{
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    })
+})

@@ -1,8 +1,9 @@
 body{
     margin: 0;
-    height: 100vh;
     background-color: black;
     overflow: hidden;
+    height: 3000px;
+    position: relative;
 }
 span{
     background: url("https://cdn4.iconfinder.com/data/icons/general-office/91/General_Office_54-256.png");
@@ -30,4 +31,9 @@ span{
         filter: hue-rotate(720deg);
 
     }
+}
+.up{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
